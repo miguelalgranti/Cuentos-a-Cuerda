@@ -1,0 +1,23 @@
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <a style="position:fixed;top: 50px; left:10%; color:yellow; z-index: 1001; font-style: italic; font-family: Lato;" role="button">¿Quiénes Somos?</a>
+  <a style="position:fixed;top: 130px; left:10%; color:yellow; z-index: 1001; font-style: italic; font-family: Lato;" role="button">Funciones y Eventos</a>
+  <a style="position:fixed;top: 210px; left:10%; color:yellow; z-index: 1001; font-style: italic; font-family: Lato;" role="button">Libros y Canciones</a>
+  <a style="position:fixed;top: 290px; left:10%; color:yellow; z-index: 1001; font-style: italic; font-family: Lato; font-size:100%;" role="button">Contrataciones</a>
+  <div id="card mat-card" id="first-card">
+      <div id="profile-background"><img src="../assets/media/mariposas.png"><img style="margin-top: -68.8%;" src="../assets/media/cuentos a cuerda banner.png"></div>
+  <a style="color: #3b5998;" href="https://www.facebook.com/cuentosacuerda" role="button"
+  ><i class="fab fa-facebook-f fa-2x"></i
+  ></a>
+  <a style="color: #55acee;" href="https://twitter.com/DrRavalli" role="button"
+  ><i class="fab fa-twitter fa-2x"></i
+  ></a>
+  <a style="color: #ac2bac;" href="https://www.instagram.com/cuentosacuerda/?hl=es" role="button"
+  ><i class="fab fa-instagram fa-2x"></i
+  ></a>
+        <button  class="btn btn-light"  (click)="login()" *ngIf="!isLogged">Contacto</button>
+        <button  class="btn btn-light"  (click)="onLogOut()" *ngIf="isLogged">Logout</button>
